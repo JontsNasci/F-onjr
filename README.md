@@ -69,5 +69,17 @@ PRINT a.
 [Program finished]
 ~~~
 
+Can i print from any text?
+
+INPUT:
+~~~
+MAY PRINT FOR ME.
+~~~
+
+OUTPUT:
+~~~
+MAY PRINT FOR ME.
+~~~
+
 just a quick example but you got the ideia!.
 
