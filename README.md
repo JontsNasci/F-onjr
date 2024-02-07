@@ -81,6 +81,7 @@ OUTPUT:
 MAY PRINT FOR ME.
 ~~~
 
+
 HOW TO MANIPULATE STRING INDICES?
 
 INPUT:
@@ -95,6 +96,23 @@ OUTPUT:
 TO ME letter is d
 
 [Program finished]
+~~~
+
+How does if logic works.
+
+~~~
+IF TEXT HAS hello
+PRINT logic!.
+END IF
+~~~
+
+Variable named was **TEXT=hello world.**
+
+Following output.
+
+OUTPUT:
+~~~
+logic!
 ~~~
 
 just a quick example but you got the idea!.
