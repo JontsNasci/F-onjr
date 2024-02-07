@@ -81,5 +81,20 @@ OUTPUT:
 MAY PRINT FOR ME.
 ~~~
 
-just a quick example but you got the ideia!.
+HOW TO MANIPULATE STRING INDICES?
 
+INPUT:
+~~~
+TEXT=wounded if I could write beautiful text.
+A AS INDICE 4 OF TEXT
+SHOW TO ME letter is A.
+~~~
+
+OUTPUT:
+~~~
+TO ME letter is d
+
+[Program finished]
+~~~
+
+just a quick example but you got the idea!.
