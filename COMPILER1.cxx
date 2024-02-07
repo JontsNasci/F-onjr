@@ -17,17 +17,20 @@ std::vector<std::string> OPERATORS;
 
 std::vector<std::string> PRINTCODE;
 std::vector<std::string> WCODES;
-std::vector<std::string> CONSTANT_VARIABLES;
+std::vector<std::string> DEFINER;
 
 std::vector<std::string> BREAKS;
 std::vector<std::string> LOOPS;
-std::vector<std::string> WHILES;
-//PRINTCODE
+
+std::vector<std::string> GLOBAL_VARIABLE;
 //WCODES
 
 bool LEGACY_BACK_TRACK = false;
 bool HAS_LOG = true;
 bool IS_READING = false;
+
+// IF VARIABLES SETTED TO WHILE OR LOOP IS LIKE BOOLEAN OR IS
+bool IS_NAMED_VARIABLE = false;
 
 std::string STACK;
 
@@ -315,17 +318,6 @@ bool IS_TABLE_LOOP(std::string A)
 	}
 }
 
-bool IS_TABLE_WHILE(std::string A)
-{
-	for (size_t i = 0; i < WHILES.size(); i++)
-	{
-		if (A.find(WHILES[i]) != std::string::npos)
-		{
-			cout << "WHILE AT LINE " << LINE_NUMBER << endl;
-		}
-	}
-}
-
 bool IS_WCODE(std::string A)
 {
 	//const std::string PRINTCODE = "";
@@ -343,10 +335,6 @@ bool IS_WCODE(std::string A)
 	}
 
 	if (IS_TABLE_LOOP(A))
-	{
-	}
-
-	if (IS_TABLE_WHILE(A))
 	{
 	}
 
@@ -438,14 +426,18 @@ int main(int argc, char *argv[])
 	WCODES.push_back("LOOP");
 	WCODES.push_back("FOR");
 	
-	CONSTANT_VARIABLES.push_back("ACTUAL INDICE");
-	CONSTANT_VARIABLES.push_back("BREAK LOOP");
+	GLOBAL_VARIABLE.push_back("LOOP INDICE");
+	//GLOBAL_VARIABLE.push_back("");
+	//GLOBAL_VARIABLE.push_back("");
+	
+	DEFINER.push_back("DEFINE LOOP INDICE");
+	//"DEFINER.push_back("");
+	//DEFINIR.push_back("LOOP ROUNDS")
 
 //BREAKS LOOPS WHILES
-	BREAKS.push_back("");
-	LOOPS.push_back("");
-	WHILES.push_back("");
-
+	BREAKS.push_back("BREAK");
+	LOOPS.push_back("LOOP");
+	
 	bool LATER_CLOSE = false;
 	// Verifica se o arquivo foi aberto com sucesso
 	if (arquivo.is_open())
