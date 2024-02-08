@@ -117,7 +117,10 @@ logic!
 
 just a quick example but you got the idea!.
 
-#Contact
+# Contact
 If you want to contribute contact on my e-mail
 
-#this is only the demo, the complete version are obviously paid!
+# this is only the demo, the complete version are obviously paid!
+
+# Licensing
+All the code are protected and use are not permitted and either use of source and neither use of public or private use.
